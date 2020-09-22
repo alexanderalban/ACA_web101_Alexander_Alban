@@ -51,6 +51,7 @@ body {
     border: 3px solid #0795C3;
     background: white;
     padding: 12px;
+    /*add auto to padding? %?*/
   }
 
   nav {
@@ -119,4 +120,27 @@ body {
     color: black;
     letter-spacing: 10px;
     font-style: italic;
+  }
+
+  ul {
+    color:black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-witdth: 3px;
+    -webkit-text-stroke-color: black;
+    grid-column: 2/3;
+    margin: 3% auto;
+  }
+
+  ul > a:link {
+    color:black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-witdth: 3px;
+    -webkit-text-stroke-color: black;
+  }
+
+  ul > a:visited {
+    color:black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-witdth: 3px;
+    -webkit-text-stroke-color: black;
   }
