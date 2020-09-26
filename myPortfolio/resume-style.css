@@ -61,16 +61,20 @@ grid-template-areas:
 
 h2 {
     align-self: center;
-    font-size: 30pt;
-    margin-inline-start: 5%;
+    font-size: 20pt;
+    margin-inline-start: 6%;
     margin-top: 0;
     color: rgb(42,10,92);
     font-family: 'Courier Prime', monospace;
-    font-weight: normal;
+    letter-spacing: 0.1em;
 }
 
 h3 { 
     color: rgb(42,10,92);
+    font-family: 'Courier Prime', monospace;
+    font-size: 20pt;
+    letter-spacing: 0.1em;
+    
 }
 
 h5 {
@@ -136,11 +140,20 @@ h4 {
     font-weight: normal;
     align-self: end;
     margin-bottom: 0;
-    font-family: 'Courier Prime', monospace
+    font-family: 'Courier Prime', monospace;
+    letter-spacing: 00.1em;
+}
+
+#contact-line {
+    width: 85%;
+    margin-top: 0;
+    grid-area: contact-line;
+    align-self: center;
+
 }
 
 #phone {
-    grid-area: phone
+    grid-area: phone;
 }
 
 #location {
@@ -160,6 +173,7 @@ h4 {
     text-align: center;
     color: white;
     font-style: normal;
+    align-self: start;
 }
 
 i {
@@ -181,9 +195,10 @@ i {
     display: grid;
 
     grid-template-columns: 180pt;
-    grid-template-rows: repeat(4, 75pt);
+    grid-template-rows: 110pt 40pt 70pt 100pt repeat(3, 90pt);
     grid-template-areas:
         "contact-info"
+        "contact-line"
         "phone"
         "location"
         "email"
