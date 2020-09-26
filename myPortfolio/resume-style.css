@@ -5,6 +5,10 @@ body {
 
 /*Header container settings! Includes header (profile pic and name) */
 
+header {
+    display: grid;
+}
+
 #miyamoto-photo {
     grid-area: headshot;
     display: grid;
@@ -110,8 +114,20 @@ article {
     
 }
 
-.history {
-    grid-area: history;
+#expertise {
+    grid-area: expertise;
+    margin-inline-start: 5%;
+    margin-right: 40pt;
+}
+
+#professional-history {
+    grid-area: professional-history;
+    margin-inline-start: 5%;
+    margin-right: 40pt;
+}
+
+#educational-history {
+    grid-area: educational-history;
     margin-inline-start: 5%;
     margin-right: 40pt;
 }
@@ -143,14 +159,14 @@ address {
     display: grid;
     background-color: rgb(249,255,251);
     grid-template-columns: 170pt 406pt;
-    grid-template-rows: 100pt repeat(5, 135pt);
+    grid-template-rows: 100pt repeat(3, 135pt) 75pt 200pt;
     grid-template-areas: 
         "job-title article"
-        "address history"
-        "address history"
-        "address history"
-        "address history"
-        "address history"
+        "address expertise"
+        "address professional-history"
+        "address professional-history"
+        "address professional-history"
+        "address educational-history"
 }
 
 /* Address container settings! includes "Contact Info" (h4), and contact info + icons */
@@ -211,7 +227,7 @@ i {
     display: grid;
 
     grid-template-columns: 170pt;
-    grid-template-rows: 110pt 40pt 70pt 100pt repeat(3, 90pt);
+    grid-template-rows: 110pt 40pt 80pt repeat(2, 120pt) repeat(2, 100pt);
     grid-template-areas:
         "contact-info"
         "contact-line"
@@ -220,4 +236,55 @@ i {
         "email"
         "linked-in"
 
+}
+
+/*This is where we work on the reactive website part!*/
+
+@media (max-width: 576pt) {
+    body {
+        min-width: 100pt;
+    }
+
+
+    .container-top {
+        grid-template-columns: 500pt;
+        grid-template-areas:
+        "headshot"
+        "headshot"
+        "name"
+        "name";
+    }
+
+    .container-main {
+        grid-template-columns: 500pt;
+        grid-template-rows: 100pt 100pt 100pt repeat(2, 175pt) 200pt  600pt;
+        grid-template-areas:
+        "job-title"
+        "article"
+        "expertise"
+        "professional-history"
+        "professional-history"
+        "educational-history"
+        "address";
+    }
+
+    .address-container {
+        grid-template-columns: 500pt;
+        grid-template-rows: repeat(6, 100pt);
+        grid-template-areas:
+        "contact-info"
+        "contact-line"
+        "phone"
+        "location"
+        "email"
+        "linked-in"
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #job-title {
+        text-align: center;
+    }
 }
