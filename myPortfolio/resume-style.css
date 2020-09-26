@@ -80,15 +80,16 @@ h2 {
 h3 { 
     color: rgb(42,10,92);
     font-family: 'Courier Prime', monospace;
-    font-size: 20pt;
+    font-size: 17pt;
     letter-spacing: 0.1em;
-    
+    margin-top: 30pt;
 }
 
 h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 15pt;
     margin-bottom: 0;
+    color: rgb(117,122,118);
 }
 
 article {
@@ -112,11 +113,25 @@ article {
 .history {
     grid-area: history;
     margin-inline-start: 5%;
+    margin-right: 40pt;
 }
 
 .history-line {
-    width: 85%;
+    width: 100%;
     margin-inline-start: 0;
+}
+
+.job-description {
+    font-family: 'Courier Prime', monospace;
+    font-size: 11pt;
+    color: rgb(117,122,118);
+}
+
+.job-dates {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    margin-top: 0;
+    color: rgb(117,122,118);
 }
 
 address {
@@ -190,17 +205,6 @@ h4 {
 i {
     color: white;
     margin-bottom: 10pt;
-}
-
-.job-description {
-    font-family: 'Courier Prime', monospace;
-    font-size: 11pt;
-}
-
-.job-dates {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    margin-top: 0;
 }
 
 .address-container {
