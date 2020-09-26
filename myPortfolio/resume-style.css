@@ -284,3 +284,22 @@ i {
     }
 
 }
+
+/*This is where I work on the "pop" text, as per the Push Yourself*/
+
+ .poptext:hover {
+    color:rgb(42,137,69);
+    transition: 1s ease;
+  }
+
+  /*Bounce!*/
+
+@keyframes bouncy {
+    0% { padding-left: 0em;}
+    50% { padding-top: .8em;}
+    100% { padding-left: 0em;}   
+  }
+
+ .poptext:hover {
+    animation: bouncy 0.4s ease;
+  } 
