@@ -16,16 +16,18 @@
 
 #miyamoto-name {
     grid-area: name;
-    background-color: geen;
     display: grid
 }
 
 h1 {
     align-self: center;
-    font-size: 80pt;
+    font-size: 65pt;
     margin-top: 25pt;
     margin-bottom: 0;
     color: rgb(42,10,92);
+    margin-inline-start: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
 
 hr {
@@ -33,6 +35,7 @@ hr {
     background-color:rgb(170,174,177);
     height: 3px;
     border: none;
+    margin-inline-start: 5%;
 }
 
 #name-line {
@@ -42,7 +45,7 @@ hr {
 .container-top {
     display:grid;
 
-grid-template-columns: 200pt 400pt;
+grid-template-columns: 180pt 400pt;
 grid-template-rows: 125pt 125pt;
 grid-template-areas: 
     "headshot name"
@@ -59,13 +62,21 @@ grid-template-areas:
 h2 {
     align-self: center;
     font-size: 30pt;
-    margin-inline-start: 19%;
+    margin-inline-start: 5%;
     margin-top: 0;
     color: rgb(42,10,92);
+    font-family: 'Courier Prime', monospace;
+    font-weight: normal;
 }
 
 h3 { 
     color: rgb(42,10,92);
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15pt;
+    margin-bottom: 0;
 }
 
 article {
@@ -76,6 +87,8 @@ article {
 
 .description {
     align-self: center;
+    margin-inline-start: 5%;
+    font-family: 'Courier Prime', monospace
 }
 
 .contact {
@@ -85,7 +98,7 @@ article {
 
 .history {
     grid-area: history;
-    background-color: yellow;
+    margin-inline-start: 5%;
 }
 
 .history-line {
@@ -100,7 +113,7 @@ address {
 .container-main {
     display: grid;
 
-    grid-template-columns: 200pt 400pt;
+    grid-template-columns: 180pt 400pt;
     grid-template-rows: 100pt repeat(5, 135pt);
 
     grid-template-areas: 
@@ -120,8 +133,10 @@ h4 {
     grid-area: contact-info;
     color: white;
     font-style: normal;
+    font-weight: normal;
     align-self: end;
     margin-bottom: 0;
+    font-family: 'Courier Prime', monospace
 }
 
 #phone {
@@ -152,10 +167,20 @@ i {
     margin-bottom: 10pt;
 }
 
+.job-description {
+    font-family: 'Courier Prime', monospace
+}
+
+.job-dates {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    margin-top: 0;
+}
+
 .address-container {
     display: grid;
 
-    grid-template-columns: 200pt;
+    grid-template-columns: 180pt;
     grid-template-rows: repeat(4, 75pt);
     grid-template-areas:
         "contact-info"
