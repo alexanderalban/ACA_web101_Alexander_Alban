@@ -242,7 +242,7 @@ i {
 
 @media (max-width: 576pt) {
     body {
-        min-width: 100pt;
+        min-width: 500pt;
     }
 
 
@@ -257,7 +257,7 @@ i {
 
     .container-main {
         grid-template-columns: 500pt;
-        grid-template-rows: 100pt 100pt 100pt repeat(2, 175pt) 200pt  600pt;
+        grid-template-rows: repeat(3, 100pt) repeat(2, 175pt) 175pt  400pt;
         grid-template-areas:
         "job-title"
         "article"
@@ -269,22 +269,18 @@ i {
     }
 
     .address-container {
-        grid-template-columns: 500pt;
-        grid-template-rows: repeat(6, 100pt);
+        grid-template-columns: 250pt 250pt;
+        grid-template-rows: repeat(4, 100pt);
         grid-template-areas:
-        "contact-info"
-        "contact-line"
-        "phone"
-        "location"
-        "email"
-        "linked-in"
+        "contact-info contact-info"
+        "contact-line contact-line"
+        "phone location"
+        "email linked-in"
     }
 
-    h1 {
+    h1, h2, h3 {
         text-align: center;
+        margin: 0;
     }
 
-    #job-title {
-        text-align: center;
-    }
 }
