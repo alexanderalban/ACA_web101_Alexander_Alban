@@ -149,12 +149,13 @@ body {
   }
 
   ul {
+    grid-column: 2/3;
     color:black;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-witdth: 3px;
     -webkit-text-stroke-color: black;
-    grid-column: 2/3;
     margin: 3% auto;
+    font-size: large;
   }
 
   ul > a:link {
