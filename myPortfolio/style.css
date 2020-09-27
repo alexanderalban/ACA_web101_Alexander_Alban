@@ -156,6 +156,7 @@ body {
     -webkit-text-stroke-color: black;
     margin: 3% auto;
     font-size: large;
+    list-style: none;
   }
 
   ul > a:link {
@@ -170,6 +171,10 @@ body {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-witdth: 3px;
     -webkit-text-stroke-color: black;
+  }
+
+  li {
+    margin: 10px 0;
   }
 
   /*Animation fun!*/
