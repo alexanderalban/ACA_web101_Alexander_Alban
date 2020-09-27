@@ -52,7 +52,7 @@ body {
   }
 
   .has-border {
-    border-radius: 25pt;
+    border-radius: 25pt fixed;
     border: 3px solid #0795C3;
     background: white;
     padding: 12px;
@@ -126,6 +126,15 @@ body {
     font-style: italic;
   }
 
+  .button:hover {
+    color: orange;
+    transition: 0.5s ease;
+  }
+
+  .normal-link:visited {
+    color: orange;
+  }
+
   ul {
     color:black;
     -webkit-text-fill-color: white;
@@ -147,4 +156,16 @@ body {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-witdth: 3px;
     -webkit-text-stroke-color: black;
+  }
+
+  /*Animation fun!*/
+
+  .button:hover {
+    animation: bouncy 0.4s ease;
+  } 
+
+  @keyframes bouncy {
+    0% { padding-bottom: 0em;}
+    50% { padding-top: .1em;}
+    100% { padding-bottom: 0em;}   
   }
