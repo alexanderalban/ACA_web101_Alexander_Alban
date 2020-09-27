@@ -109,20 +109,20 @@ body {
     margin: 3% auto;
   }
 
-  button {
+  .button {
     grid-column: 2/3;
     margin: 3% auto;
     width: 70% auto;
     height: 10% auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 20pt;
     border-radius: 50px;
+    border: 3px solid #0795C3;
     background: whitesmoke;
     padding: 5%;
-    /*padding-bottom: 5%;*/
     text-align: center;
     color: black;
-    letter-spacing: 10px;
+    letter-spacing: 5pt;
     font-style: italic;
   }
 
