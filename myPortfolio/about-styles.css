@@ -1,5 +1,6 @@
 html, body {
 overflow-x: hidden;
+margin: 0;
 }
 
 /*This background fix wrapper is to allow the colors of the sections to extend beyond 
@@ -7,6 +8,7 @@ the max-width border*/
 
 #background-fix-header, #background-fix-main, #background-fix-footer {
     width: 100%;
+    margin: 0;
 }
 #background-fix-header {
     background-color: rgb(255,255,255);
@@ -29,7 +31,7 @@ the max-width border*/
 }
 
 
-/*This is the Head Container components*/
+/*This is the Head-Container components*/
 
 .aca-title {
     grid-area: aca-title;
@@ -43,14 +45,14 @@ the max-width border*/
 #head-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50pt;
+    grid-template-rows: 120pt;
     grid-template-areas: 
     "aca-title navigation";
     background-color: white;
   }
 
 
-/*This is the Main Container components*/
+/*This is the Main-Container components*/
 
 #port-link, #blog, #hobbies {
     background-size: cover;
@@ -59,18 +61,16 @@ the max-width border*/
 
 
 .link-heading {
-    color:
+    color: none;
 }
 
 h1 {
     grid-area: name;
-    background-color;
     text-align: center;
 }
 
 #student-description {
     grid-area: student-description;
-    background-color:;
     text-align: center;
 }
 
@@ -119,7 +119,7 @@ address {
     "address hobbies";
 }
 
-/*This is the Footer Container components*/
+/*This is the Footer-Container components*/
 
 #projects {
     grid-area: projects;
