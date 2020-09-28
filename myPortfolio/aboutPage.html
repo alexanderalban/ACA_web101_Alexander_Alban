@@ -4,71 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about-styles.css">
-    <script src="myscript.js"></script>
-    <title>Document</title>
+    <script src="about.js"></script>
+    <title>About Me Page</title>
 </head>
 <body>
-    <header id="head-container">
-        <h2>Student of Austin Coding Academy</h2>
-        <nav>
-            <a href="index.html" class="has-border">Home</a>
-            <a href="resume.html" class="has-border">Resume</a>
-            <a href="About_Me.html" class="has-border">About Me</a>
-            <a href="https://medium.com/@albanalexander/" class="has-border">My Blog</a>
-            <a href="Contact_Me.html" class="has-border">Contact Me</a>
-        </nav>
-    </header>
-    <main id="main-container">
-        <h1>Alex Alban</h1>
-        <hr><br>
-        <p>Student of Web Development</p>
-        <img src="image-asset.jpeg" id="smiling-pic" alt="A picture of Alex Alban">
-        <article>
-            <h2>About Me</h2>
-            <p>Hello there! My name is Alex Alban, I'm the person who wrote the question above! 
-                Also this whole webpage. That's what I do, I'm training to be a full stack Web 
-                Developer- designing and coding websites and their functions. I am currently living
-                in Austin, Texas, having performed a variety of tech/management related jobs over
-                the course of my career. With 2020 being what is is, I chose to refocus my passion
-                for technology into diving deep into learning what makes these wonderous things
-                work together- programming and coding.</p>
-        </article>
-        <section>
-            <a class="port-link" href="portfolio.html">Portfolio</a>
-        </section>
-        <address>
-            <p>Email: albanalexander@gmail.com</p>
-            <p>LinkedIn: <a class="normal-link" href="https://linkedin.com/in/alexander-alban/">LinkedIn.com/in/alexander-alban</a></p>    
-        </address>
-        <section>
-            <h2>Blog</h2>
-        </section>
-        <section id="Hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Voice Over</li>
-                <li>Reading</li>
-                <li>Movies</li>
-                <li>Gaming</li>
-                <li>Music</li>
-                <li>OCD Treatment</li>
-                <li>Power Rangers</li>
-            </ul>
-        </section>
-    </main>
-    <footer id="footer-container">
-        <h3>Projects<h3>
-            <a>Link1</a>
-            <a>Link2</a>
-            <a>Link3</a>
-            <a>Link4</a>
-            <a>Link5</a>
-            <a>Link6</a>
-            <a>Link7</a>
-        <h3>Resources</h3>
-            <a>linkA</a>
-            <a>linkB</a>
-            <a>linkC</a>
-    </footer>
+    <section id="background-fix-header">
+        <header id="head-container">
+            <h2 id="aca-title">Student of Austin Coding Academy</h2>
+            <nav id="navigation">
+                <a href="index.html" class="has-border">Home</a>
+                <a href="resume.html" class="has-border">Resume</a>
+                <a href="About_Me.html" class="has-border">About Me</a>
+                <a href="https://medium.com/@albanalexander/" class="has-border">My Blog</a>
+                <a href="Contact_Me.html" class="has-border">Contact Me</a>
+            </nav>
+        </header>
+    </section>
+    <section id="background-fix-main">
+        <main id="main-container">
+            <h1>Alex Alban</h1>
+            <br>
+            <p id="student-description">Student of Web Development</p>
+            <img class="headshots" src="image-asset.jpeg" id="smiling-pic" alt="A picture of Alex Alban">
+            <article>
+                <h2>About Me</h2>
+                <p id="Bio">Hello there! My name is Alex Alban, I'm the person who wrote the question 
+                    above! Also this whole webpage. That's what I do, I'm training to be a full stack Web 
+                    Developer- designing and coding websites and their functions. I am currently living
+                    in Austin, Texas, having performed a variety of tech/management related jobs over
+                    the course of my career. With 2020 being what is is, I chose to refocus my passion
+                    for technology into diving deep into learning what makes these wonderous things
+                    work together- programming and coding.</p>
+            </article>
+            <section id="port-link">
+                <a class="link-heading" href="portfolio.html">Portfolio</a>
+            </section>
+            <address>
+                <p>Email: albanalexander@gmail.com</p>
+                <p>LinkedIn: <a class="normal-link" href="https://linkedin.com/in/alexander-alban/">LinkedIn.com/in/alexander-alban</a></p>    
+            </address>
+            <section id="blog">
+                <h2 class="link-heading">Blog</h2>
+            </section>
+            <section id="hobbies">
+                <h2 class="">Hobbies</h2>
+                <ul>
+                    <li>Voice Over</li>
+                    <li>Reading</li>
+                    <li>Movies</li>
+                    <li>Gaming</li>
+                    <li>Music</li>
+                    <li>OCD Treatment</li>
+                    <li>Power Rangers</li>
+                </ul>
+            </section>
+        </main>
+    </section>
+    <section id="background-fix-footer">
+        <footer id="footer-container">
+            <h3 id="projects">Projects<h3>
+                <a>Link1</a>
+                <a>Link2</a>
+                <a>Link3</a>
+                <a>Link4</a>
+                <a>Link5</a>
+                <a>Link6</a>
+                <a>Link7</a>
+            <h3 id="resources">Resources</h3>
+                <a>linkA</a>
+                <a>linkB</a>
+                <a>linkC</a>
+        </footer>
+    </section>
 </body>
 </html>

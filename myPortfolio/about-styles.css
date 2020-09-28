@@ -1,0 +1,138 @@
+html, body {
+overflow-x: hidden;
+}
+
+/*This background fix wrapper is to allow the colors of the sections to extend beyond 
+the max-width border*/
+
+#background-fix-header, #background-fix-main, #background-fix-footer {
+    width: 100%;
+}
+#background-fix-header {
+    background-color: rgb(255,255,255);
+}
+
+#background-fix-main {
+    background-color: rgb(227,223,219);
+}
+
+#background-fix-footer {
+    background-color: rgb(35,31,32);
+}
+
+/*This allows the page content to be centered, and limit the width of the content area*/
+
+#head-container, #main-container, #footer-container { 
+	max-width: 1080pt; 
+    margin: 0 auto; 
+
+}
+
+
+/*This is the Head Container components*/
+
+.aca-title {
+    grid-area: aca-title;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+
+#head-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50pt;
+    grid-template-areas: 
+    "aca-title navigation";
+    background-color: white;
+  }
+
+
+/*This is the Main Container components*/
+
+#port-link, #blog, #hobbies {
+    background-size: cover;
+    background-position: cover;
+}
+
+
+.link-heading {
+    color:
+}
+
+h1 {
+    grid-area: name;
+    background-color;
+    text-align: center;
+}
+
+#student-description {
+    grid-area: student-description;
+    background-color:;
+    text-align: center;
+}
+
+.headshots {
+    grid-area: headshots;
+    width: auto;
+    height: 100%;
+}
+
+article {
+    grid-area: article;
+    background-color: brown;
+}
+
+#port-link {
+    grid-area: port-link;
+    background-image: url("nikita-kachanovsky-unsplash.jpg");
+}
+
+address {
+    grid-area: address;
+}
+
+#blog {
+    grid-area: blog;
+    background-image: url("glenn-carstens-peters-unsplash.jpg");
+    display: grid;
+}
+
+#hobbies {
+    grid-area: hobbies;
+    background-image: url("kevin-ku-unsplash.jpg");
+    display: grid;
+}
+
+#main-container {
+    display: grid;
+    grid-template-columns: 435pt 435pt;
+    grid-template-rows: 100pt 100pt 160pt 200pt 200pt 200pt;
+    grid-template-areas: 
+    "name name"
+    "student-description student-description"
+    "headshots article"
+    "headshots port-link"
+    "headshots blog"
+    "address hobbies";
+}
+
+/*This is the Footer Container components*/
+
+#projects {
+    grid-area: projects;
+}
+
+#resources {
+    grid-area: resources;
+}
+
+#footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "projects" "resources";
+}
