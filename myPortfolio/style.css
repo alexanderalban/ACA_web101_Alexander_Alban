@@ -176,7 +176,8 @@ body {
   }
 
   li {
-    margin: 10px 0;
+    margin: 10px 15px 0 0;
+    text-align: center;
   }
 
   /*Animation fun!*/
