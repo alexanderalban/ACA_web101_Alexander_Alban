@@ -33,12 +33,15 @@ the max-width border*/
 
 /*This is the Head-Container components*/
 
-.aca-title {
+#aca-title {
     grid-area: aca-title;
+    align-self: end;
 }
 
-.navigation {
+#navigation {
     grid-area: navigation;
+    align-self: end;
+    justify-self: end;
 }
 
 
@@ -62,11 +65,15 @@ the max-width border*/
 
 .link-heading {
     color: none;
+    align-self: center;
+    justify-self: center;
 }
 
 h1 {
     grid-area: name;
     text-align: center;
+    align-self: end;
+    text-decoration: underline;
 }
 
 #student-description {
@@ -80,14 +87,15 @@ h1 {
     height: 100%;
 }
 
-article {
+#history {
     grid-area: article;
-    background-color: brown;
+    background-color: white;
 }
 
 #port-link {
     grid-area: port-link;
     background-image: url("nikita-kachanovsky-unsplash.jpg");
+    display: grid;
 }
 
 address {
