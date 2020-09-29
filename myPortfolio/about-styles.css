@@ -1,6 +1,7 @@
 html, body {
 overflow-x: hidden;
 margin: 0;
+font-family: 'Open Sans', sans-serif;
 }
 
 /*This background fix wrapper is to allow the colors of the sections to extend beyond 
@@ -42,12 +43,13 @@ the max-width border*/
     grid-area: navigation;
     align-self: end;
     justify-self: end;
+    margin-bottom: 15pt;
 }
 
 
 #head-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 435pt 435pt;
     grid-template-rows: 120pt;
     grid-template-areas: 
     "aca-title navigation";
@@ -64,32 +66,43 @@ the max-width border*/
 
 
 .link-heading {
-    color: none;
+    color: black;
     align-self: center;
     justify-self: center;
+    background-color: white;
+    padding: 15pt;
+    font-size: 30pt;
 }
 
 h1 {
     grid-area: name;
-    text-align: center;
+    justify-self: center;
     align-self: end;
     text-decoration: underline;
+    font-size: 25pt;
+    margin-bottom: 0;
+
 }
 
 #student-description {
     grid-area: student-description;
-    text-align: center;
+    justify-self: center;
+    font-size: 15pt;
 }
 
 .headshots {
     grid-area: headshots;
     width: auto;
-    height: 100%;
+    height: 95%;
 }
 
 #history {
     grid-area: article;
     background-color: white;
+    padding: 20pt;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 #port-link {
@@ -100,6 +113,10 @@ h1 {
 
 address {
     grid-area: address;
+    background-color: white;
+    align-self: end;
+    height: 233pt;
+    width: 438pt;
 }
 
 #blog {
@@ -108,16 +125,41 @@ address {
     display: grid;
 }
 
-#hobbies {
+#hobby-container {
     grid-area: hobbies;
     background-image: url("kevin-ku-unsplash.jpg");
     display: grid;
+
+}
+
+.hobby-title {
+    color:black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-witdth: 3pt;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+/*see more Hobby Container settings below*/
+
+#hobby-container > p {
+    color:black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-witdth: 3pt;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    font-size: 16pt;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0;
 }
 
 #main-container {
     display: grid;
     grid-template-columns: 435pt 435pt;
-    grid-template-rows: 100pt 100pt 160pt 200pt 200pt 200pt;
+    grid-template-rows: 100pt 80pt 215pt 220pt 220pt 200pt;
     grid-template-areas: 
     "name name"
     "student-description student-description"
@@ -125,6 +167,49 @@ address {
     "headshots port-link"
     "headshots blog"
     "address hobbies";
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+}
+
+/*This is the hobby-container components*/
+
+.hobby-title {
+    grid-area: hobby-title;
+}
+
+#hob1 {
+    grid-area: voiceover;
+}
+
+#hob2 {
+    grid-area: reading;
+}
+
+#hob3 {
+    grid-area: movies;
+}
+
+#hob4 {
+    grid-area: gaming;
+}
+
+#hob5 {
+    grid-area: music;
+}
+
+#hob6 {
+    grid-area: ocd-treatment
+}
+
+#hobby-container {
+    display: grid;
+    grid-template-columns: 217.5pt 217.5pt;
+    grid-template-rows: 50pt 50pt 50pt 50pt;
+    grid-template-areas:
+    "hobby-title hobby-title"
+    "voiceover reading"
+    "movies gaming"
+    "music ocd-treatment"
 }
 
 /*This is the Footer-Container components*/
@@ -139,8 +224,9 @@ address {
 
 #footer-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 435pt 435pt;
+    grid-template-rows: 100pt;
     grid-template-areas:
     "projects" "resources";
+    color: white;
 }
