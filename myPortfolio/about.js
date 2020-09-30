@@ -1,3 +1,5 @@
+// Functions for Pop-ups in the "Hobbies and Interests" section//
+
 function hobbypop1() {
     const popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
@@ -23,3 +25,9 @@ function hobbypop5() {
     popup.classList.toggle("show")
 }
 
+function hobbypop6() {
+  const popup = document.getElementById("myPopup6");
+  popup.classList.toggle("show")
+}
+
+//

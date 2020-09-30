@@ -5,6 +5,14 @@ font-family: 'Open Sans', sans-serif;
 
 }
 
+body {
+    background-image: url(photo-1561477158-071455ac60e8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
 /*This background fix wrapper is to allow the colors of the sections to extend beyond 
 the max-width border*/
 
@@ -13,11 +21,11 @@ the max-width border*/
     margin: 0;
 }
 #background-fix-header {
-    background-color: rgb(255,255,255);
+    background-color: transparent;
 }
 
 #background-fix-main {
-    background-color: rgb(227,223,219);
+    background-color: transparent;
 }
 
 #background-fix-footer {
@@ -39,14 +47,18 @@ the max-width border*/
     grid-area: aca-title;
     align-self: end;
     justify-self: start;
+    color: white;
 }
 
 .logo {
     grid-area: logo;
     height: 80pt;
     width: auto;
-    margin-bottom: 0;
+    margin-bottom: 010pt;
     align-self: end;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: -0pt -1.5pt 6pt 5pt white;
 }
 
 #navigation {
@@ -56,17 +68,18 @@ the max-width border*/
     margin-bottom: 15pt;
     color:black;
     font-size: 15pt;
+    font-weight: bold;
     
 }
 
 .nav-links:link {
-    color: black;
+    color: white;
     text-decoration: none;
     padding-right: 10pt;
 }
 
 .nav-links:visited {
-    color:black;
+    color:white;
 }
 
 .nav-links:hover {
@@ -80,7 +93,8 @@ the max-width border*/
     grid-template-rows: 120pt;
     grid-template-areas: 
     "logo aca-title navigation";
-    background-color: white;
+    background-color: transparent;
+    justify-content: center;
   }
 
 
@@ -108,6 +122,7 @@ h1 {
     text-decoration: underline;
     font-size: 25pt;
     margin-bottom: 0;
+    color: white;
 
 }
 
@@ -115,6 +130,7 @@ h1 {
     grid-area: student-description;
     justify-self: center;
     font-size: 15pt;
+    color: white;
 }
 
 .headshots {
@@ -195,10 +211,7 @@ address {
 }
 
 .hobby-title {
-    color:black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-witdth: 3pt;
-    -webkit-text-stroke-color: black;
+    color:white;
     text-align: center;
 }
 
@@ -221,7 +234,7 @@ h2 {
 #main-container {
     display: grid;
     grid-template-columns: 435pt 435pt;
-    grid-template-rows: 100pt 80pt 215pt 220pt 220pt 200pt;
+    grid-template-rows: 100pt 30pt 215pt 220pt 220pt 200pt;
     grid-template-areas: 
     "name name"
     "student-description student-description"
@@ -232,6 +245,8 @@ h2 {
     grid-row-gap: 25px;
     grid-column-gap: 25px;
     overflow: hidden;
+    background-color: rgb(85, 85, 85, 0.5);
+    justify-content: center;
 }
 
 /*This is the hobby-container components*/
@@ -292,6 +307,7 @@ h2 {
     grid-template-areas:
     "projects" "resources";
     color: white;
+    justify-content: center;
 }
 
 /*Hobbies Image Hover Settings!*/
@@ -332,9 +348,10 @@ h2 {
     user-select: none;
   }
 
+
   .popup .popuptext {
     visibility: hidden;
-    width: 160px;
+    width: 220px;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -372,4 +389,8 @@ h2 {
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+  }
+
+  .popup:hover {
+      color:orange;
   }
