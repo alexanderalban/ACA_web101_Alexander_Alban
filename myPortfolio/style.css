@@ -180,6 +180,17 @@ body {
     text-align: center;
   }
 
+  form {
+    grid-column: 2/3;
+    justify-self: center;
+    color:black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-witdth: 3px;
+    -webkit-text-stroke-color: black;
+    margin: 3% auto;
+    font-size: large;
+  }
+
   /*Animation fun!*/
 
   .button:hover {

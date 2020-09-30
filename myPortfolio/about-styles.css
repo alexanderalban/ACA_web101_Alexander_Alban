@@ -2,6 +2,7 @@ html, body {
 overflow-x: hidden;
 margin: 0;
 font-family: 'Open Sans', sans-serif;
+
 }
 
 /*This background fix wrapper is to allow the colors of the sections to extend beyond 
@@ -37,6 +38,15 @@ the max-width border*/
 #aca-title {
     grid-area: aca-title;
     align-self: end;
+    justify-self: start;
+}
+
+.logo {
+    grid-area: logo;
+    height: 80pt;
+    width: auto;
+    margin-bottom: 0;
+    align-self: end;
 }
 
 #navigation {
@@ -44,15 +54,32 @@ the max-width border*/
     align-self: end;
     justify-self: end;
     margin-bottom: 15pt;
+    color:black;
+    font-size: 15pt;
+    
 }
 
+.nav-links:link {
+    color: black;
+    text-decoration: none;
+    padding-right: 10pt;
+}
+
+.nav-links:visited {
+    color:black;
+}
+
+.nav-links:hover {
+    color: orange;
+    text-decoration: underline;
+}
 
 #head-container {
     display: grid;
-    grid-template-columns: 435pt 435pt;
+    grid-template-columns: 80pt 355pt 435pt;
     grid-template-rows: 120pt;
     grid-template-areas: 
-    "aca-title navigation";
+    "logo aca-title navigation";
     background-color: white;
   }
 
@@ -109,6 +136,12 @@ h1 {
     grid-area: port-link;
     background-image: url("nikita-kachanovsky-unsplash.jpg");
     display: grid;
+    background-color: white;
+}
+
+#port-link:hover {
+    opacity: .5;
+    transition: 1s;
 }
 
 address {
@@ -117,6 +150,31 @@ address {
     align-self: end;
     height: 233pt;
     width: 438pt;
+    font-style: unset;
+    font-size: 15pt;
+    font-weight: bold;
+    display: grid;
+}
+
+.adress-links {
+    align-self: center;
+    text-indent: 25pt
+}
+
+.normal-link:link {
+    color:black;
+    text-decoration: none;
+}
+
+.normal-link:visited {
+    color:black;
+    text-decoration: none;
+}
+
+
+.normal-link:hover {
+    color: orange;
+    text-decoration: underline;
 }
 
 #blog {
@@ -125,11 +183,15 @@ address {
     display: grid;
 }
 
+#blog:hover {
+    opacity: 50%;
+    transition: 1s;
+}
+
 #hobby-container {
     grid-area: hobbies;
     background-image: url("kevin-ku-unsplash.jpg");
     display: grid;
-
 }
 
 .hobby-title {
@@ -169,6 +231,7 @@ h2 {
     "address hobbies";
     grid-row-gap: 25px;
     grid-column-gap: 25px;
+    overflow: hidden;
 }
 
 /*This is the hobby-container components*/
@@ -230,3 +293,29 @@ h2 {
     "projects" "resources";
     color: white;
 }
+
+/*Hobbies Image Hover Settings!*/
+
+/*#vo-hidden {
+    background-color: black;
+    padding: 20pt;
+    display: none
+}
+
+/*#hob1:hover + #vo-hidden {
+    display: block;
+
+
+}
+
+/*Animation Time!*/
+
+.nav-links:hover {
+    animation: bouncy .5s ease;
+  } 
+
+  @keyframes bouncy {
+    0% { margin-bottom: 0em;}
+    50% { margin-top: .1em;}
+    100% { margin-bottom: 0em;}   
+  }
