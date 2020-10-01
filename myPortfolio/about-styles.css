@@ -35,7 +35,7 @@ the max-width border*/
 /*This allows the page content to be centered, and limit the width of the content area*/
 
 #head-container, #main-container, #footer-container { 
-	max-width: 1080pt; 
+	max-width: 760pt; 
     margin: 0 auto; 
 
 }
@@ -48,11 +48,12 @@ the max-width border*/
     align-self: end;
     justify-self: start;
     color: white;
+    font-size: 15pt;
 }
 
 .logo {
     grid-area: logo;
-    height: 80pt;
+    height: 64pt;
     width: auto;
     margin-bottom: 010pt;
     align-self: end;
@@ -65,9 +66,9 @@ the max-width border*/
     grid-area: navigation;
     align-self: end;
     justify-self: end;
-    margin-bottom: 15pt;
+    margin-bottom: 12pt;
     color:black;
-    font-size: 15pt;
+    font-size: 12pt;
     font-weight: bold;
     
 }
@@ -89,8 +90,8 @@ the max-width border*/
 
 #head-container {
     display: grid;
-    grid-template-columns: 80pt 355pt 435pt;
-    grid-template-rows: 120pt;
+    grid-template-columns: 70pt 284pt 348pt;
+    grid-template-rows: 96pt;
     grid-template-areas: 
     "logo aca-title navigation";
     background-color: transparent;
@@ -111,8 +112,8 @@ the max-width border*/
     align-self: center;
     justify-self: center;
     background-color: white;
-    padding: 15pt;
-    font-size: 30pt;
+    padding: 12pt;
+    font-size: 24pt;
 }
 
 h1 {
@@ -120,17 +121,19 @@ h1 {
     justify-self: center;
     align-self: end;
     text-decoration: underline;
-    font-size: 25pt;
+    font-size: 20pt;
     margin-bottom: 0;
     color: white;
 
 }
 
+
 #student-description {
     grid-area: student-description;
     justify-self: center;
-    font-size: 15pt;
+    font-size: 12pt;
     color: white;
+    margin: 0;
 }
 
 .headshots {
@@ -142,10 +145,11 @@ h1 {
 #history {
     grid-area: article;
     background-color: white;
-    padding: 20pt;
+    padding: 16pt;
     display: grid;
     justify-items: center;
     align-items: center;
+    font-size: 10pt;
 }
 
 #port-link {
@@ -164,17 +168,17 @@ address {
     grid-area: address;
     background-color: white;
     align-self: end;
-    height: 233pt;
-    width: 438pt;
+    height: 186.4pt;
+    width: 350.4pt;
     font-style: unset;
-    font-size: 15pt;
+    font-size: 12pt;
     font-weight: bold;
     display: grid;
 }
 
 .adress-links {
     align-self: center;
-    text-indent: 25pt
+    text-indent: 20pt
 }
 
 .normal-link:link {
@@ -223,18 +227,19 @@ address {
     -webkit-text-stroke-witdth: 3pt;
     -webkit-text-stroke-color: black;
     text-align: center;
-    font-size: 16pt;
+    font-size: 12.8pt;
 }
 
 h2 {
     text-align: center;
     margin-bottom: 0;
+    font-size: 15pt;
 }
 
 #main-container {
     display: grid;
-    grid-template-columns: 435pt 435pt;
-    grid-template-rows: 100pt 30pt 215pt 220pt 220pt 200pt;
+    grid-template-columns: 348pt 348pt;
+    grid-template-rows: 50pt 24pt 172pt 176pt 176pt 160pt;
     grid-template-areas: 
     "name name"
     "student-description student-description"
@@ -242,8 +247,8 @@ h2 {
     "headshots port-link"
     "headshots blog"
     "address hobbies";
-    grid-row-gap: 25px;
-    grid-column-gap: 25px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
     overflow: hidden;
     background-color: rgb(85, 85, 85, 0.5);
     justify-content: center;
@@ -281,8 +286,8 @@ h2 {
 
 #hobby-container {
     display: grid;
-    grid-template-columns: 217.5pt 217.5pt;
-    grid-template-rows: 50pt 50pt 50pt 50pt;
+    grid-template-columns: 174pt 174pt;
+    grid-template-rows: 40pt 40pt 40pt 40pt;
     grid-template-areas:
     "hobby-title hobby-title"
     "voiceover reading"
@@ -292,37 +297,32 @@ h2 {
 
 /*This is the Footer-Container components*/
 
-#projects {
-    grid-area: projects;
-}
-
-#resources {
-    grid-area: resources;
+#background-fix-footer {
+ 
 }
 
 #footer-container {
     display: grid;
-    grid-template-columns: 435pt 435pt;
-    grid-template-rows: 100pt;
+    grid-template-columns: 348pt 348pt;
+    grid-template-rows: 80pt;
     grid-template-areas:
-    "projects" "resources";
+    "projects";
     color: white;
     justify-content: center;
+
 }
+
+
+
+#projects {
+    grid-area: projects;
+}
+
+
 
 /*Hobbies Image Hover Settings!*/
 
-/*#vo-hidden {
-    background-color: black;
-    padding: 20pt;
-    display: none
-}
 
-/*#hob1:hover + #vo-hidden {
-    display: block;
-
-
-}
 
 /*Animation Time!*/
 
