@@ -146,8 +146,11 @@ body {
     transition: 0.5s ease;
   }
 
+.normal-link {
+  color: orange;
+}
   .normal-link:visited {
-    color: orange;
+    color: burlywood;
   }
 
   ul {
@@ -180,16 +183,6 @@ body {
     text-align: center;
   }
 
-  form {
-    grid-column: 2/3;
-    justify-self: center;
-    color:black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-witdth: 3px;
-    -webkit-text-stroke-color: black;
-    margin: 3% auto;
-    font-size: large;
-  }
 
   /*Animation fun!*/
 
@@ -203,12 +196,58 @@ body {
     100% { margin-bottom: 0em;}   
   }
 
+
+
+/*CONTACT PAGE SETTINGS*/
+
+form {
+  grid-column: 2 / 3;
+  justify-self: center;
+  color:white;
+  -webkit-text-stroke-witdth: 3px;
+  -webkit-text-stroke-color: black;
+  margin: 3% auto;
+  font-size: large;
+}
+
+textarea {
+  color: black;
+  width: 60ch;
+  height: 15ch;
+  resize: none;
+}
+
+.form-button {
+  color: white;
+  background-color: orange;
+}
+
   /*Reactive Adjustments*/
 
   @media (max-width: 800pt) {
 .nav-squish {
   display: none;
 }
+
+/*Contact Page Specific*/
+
+form {
+  grid-column: 1/4
+}
+
+#contact-main > p {
+  grid-column: 1 / 4;
+  width: 50ch;
+}
+
+textarea {
+  max-width: 50ch;
+}
+
+#results {
+  
+}
+
 
   @media (max-width: 600pt) {
     header {
@@ -228,4 +267,9 @@ body {
     }
   }
 
+  textarea {
+    max-width: 40ch;
+  }
+
 }
+

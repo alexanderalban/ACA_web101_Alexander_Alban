@@ -17,22 +17,22 @@
       <a href="contactPage.html" class="has-border">Contact <span class="nav-squish">Me</span></a>
     </nav>
   </header> 
-  <main>
+  <main id="contact-main">
     <h1>Contact me</h1>
     <p>Thanks for visiting! If you'd like to get in contact with me, please fill out the form below. I hope you have a great day!</p>
     <form action="results.html" method="GET" enctype="multipart/form-data">
       <div>
           <label for="name">Name</label><br>
-          <input type="text" name="name" id="name" >
-      </div>
-      <div>
+          <input type="text" name="name" id="name">
+      </div><br>
+      <div id="email-question">
         <label for="email">Email</label><br>
         <input type="email" name="email" id="email" >
-      </div>
-      <div>
-        <label for="date">Want a birthday message? Just click your special day!</label>
+      </div><br>
+      <div id="birthday">
+        <label for="date">Want a birthday message? Just click your special day!</label><br>
         <input type="date" name="date" id="date" min="2019-06-10">
-      </div>
+      </div><br>
       <div>
         How did you hear about me?
         <div>
@@ -51,8 +51,8 @@
           <label for="coding-academy-rec">Coding Academy Recommendation</label>
           <input type="checkbox" name="coding-academy-rec" id="coding-academy-rec">
         </div>
-      </div>
-      <div>
+      </div><br>
+      <div id="contact-confirm">
         Would you like to be contacted back?
         <div>
           <label for="yes">Yes</label>
@@ -61,11 +61,11 @@
         <div>
           <label for="no">No</label>
           <input type="radio" name="contact-back" id="no" value="no">
-        </div>
+        </div><br>
       </div>
       <div>
         <label for="bio">Comments and Questions</label><br>
-        <textarea id="comments" name="comments">Comments go here!</textarea>
+        <textarea id="comments" name="comments" minlength="20" maxlength="500">Comments go here!</textarea>
       </div>
     <button class="form-button" type="reset">Reset</button>
     <button class="form-button" type="submit">Submit</button>
