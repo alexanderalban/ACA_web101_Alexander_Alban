@@ -320,28 +320,22 @@ h2 {
 
 }
 
-
-
 #projects {
     grid-area: projects;
 }
 
-
-/*Hobbies Image Hover Settings!*/
-
-
-
 /*Animation Time!*/
 
-.nav-links:hover {
-    animation: bouncy .5s ease;
-  } 
+#main-container {
+    animation: fadeInRight;
+    animation-duration: 1s;
+}
 
-  @keyframes bouncy {
-    0% { margin-bottom: 0em;}
-    50% { margin-top: .1em;}
-    100% { margin-bottom: 0em;}   
-  }
+#hobby-container:hover {
+    animation: pulse;
+    animation-duration: 1s;
+
+}
 
   /*Pop-up time! See JavaScript for more*/
 
