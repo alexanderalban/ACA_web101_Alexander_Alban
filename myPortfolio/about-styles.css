@@ -70,6 +70,7 @@ the max-width border*/
     color:black;
     font-size: 12pt;
     font-weight: bold;
+    white-space: nowrap;
     
 }
 
@@ -435,6 +436,15 @@ h2 {
     #port-link, #blog {
         height: 200pt
     }
+
+    #navigation {
+        white-space: normal;
+        font-size: 10pt;
+    }
+
+    .nav-squish {
+        display: none;
+      }
 
 }
 
