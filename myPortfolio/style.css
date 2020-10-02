@@ -244,10 +244,6 @@ textarea {
   max-width: 50ch;
 }
 
-#results {
-  
-}
-
 
   @media (max-width: 600pt) {
     header {
