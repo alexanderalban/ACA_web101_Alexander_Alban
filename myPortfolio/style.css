@@ -75,6 +75,7 @@ body {
     border-radius: 50%;
     grid-column: 2/3;
     justify-self: center;
+    box-shadow: 0px 0px 10pt 1pt black;
   }
 
   h1 {
@@ -188,12 +189,18 @@ body {
 
   .button:hover {
     animation: bouncy .5s ease;
+    box-shadow: 0px 0px 10pt 1pt white;
   } 
 
   @keyframes bouncy {
     0% { margin-bottom: 0em;}
     50% { margin-top: .1em;}
     100% { margin-bottom: 0em;}   
+  }
+
+  .has-border:hover {
+    transition: .5s ease;
+    box-shadow: 0px 0px 10pt 1pt white;
   }
 
 
