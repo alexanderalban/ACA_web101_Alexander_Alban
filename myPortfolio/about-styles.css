@@ -339,7 +339,7 @@ h2 {
 
   /*Pop-up time! See JavaScript for more*/
 
-  .popup {
+.popup {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -350,7 +350,7 @@ h2 {
   }
 
 
-  .popup .popuptext {
+.popup .popuptext {
     visibility: hidden;
     width: 220px;
     background-color: #555;
@@ -365,7 +365,7 @@ h2 {
     margin-left: -80px;
   }
 
-  .popup .popuptext::after {
+.popup .popuptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -376,13 +376,13 @@ h2 {
     border-color: #555 transparent transparent transparent;
   }
 
-  .popup .show {
+.popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
   }
 
-  @-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeIn {
     from {opacity: 0;} 
     to {opacity: 1;}
   }
@@ -392,9 +392,7 @@ h2 {
     to {opacity:1 ;}
   }
 
-  .popup:hover {
-      color:orange;
-  }
+
 
 
 /* Responsive adjustments */
