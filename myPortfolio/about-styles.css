@@ -230,7 +230,6 @@ address {
     grid-area: hobbies;
     background-image: url("kevin-ku-unsplash.jpg");
     display: grid;
-    box-shadow: 0px 0px 10pt 1pt black;
 }
 
 .hobby-title {
@@ -246,7 +245,6 @@ address {
     -webkit-text-stroke-witdth: 3pt;
     -webkit-text-stroke-color: black;
     text-align: center;
-    font-size: 12.8pt;
 }
 
 h2 {
