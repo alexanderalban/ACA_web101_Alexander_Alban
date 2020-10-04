@@ -74,6 +74,10 @@ the max-width border*/
     
 }
 
+.nav-links {
+    transition: .5s ease;
+}
+
 .nav-links:link {
     color: white;
     text-decoration: none;
@@ -104,6 +108,7 @@ the max-width border*/
 #port-link, #blog, #hobbies {
     background-size: cover;
     background-position: cover;
+    transition: .5s ease;
 }
 
 
