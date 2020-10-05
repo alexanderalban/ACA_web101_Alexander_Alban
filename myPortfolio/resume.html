@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="resume-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono:wght@100;200;400&family=Roboto:wght@700&display=swap" rel="stylesheet">
@@ -13,11 +14,11 @@
     <!--This is the top level (header) container-->
     <header class="container-top">
         <section id="miyamoto-photo">
-            <img src="Shigeru-Miyamoto.jpg" class="shigeru-photo">
+            <img src="Shigeru-Miyamoto.jpg" class="shigeru-photo" id="classy-picture" onmouseover="ghostphoto()">
         </section>
         <section id=miyamoto-name>
             <!--Putting Pop Text on his name and job title, as per "Push Yourself"-->
-            <h1 class="poptext"><span>SHIGERU <br>MIYAMOTO</span></h1>
+            <h1 id="the-name" onclick="appearingname()"><span>SHIGERU <br>MIYAMOTO</span></h1>
             <hr id=name-line>
         </section>
     </header>
@@ -25,7 +26,7 @@
     <main class="container-main">
         <div id="job-title">
             <!--Putting Pop Text on the job title, as per "Push Yourself"-->
-            <h2 class="poptext"><span>CREATIVE <br>FELLOW</span></h2>
+            <h2 class="poptext" ><span>CREATIVE <br>FELLOW</span></h2>
         </div>
         <article>
             <p class="description">Shigeru Miyamoto is a video game designer, producer, and game
@@ -34,7 +35,7 @@
             </p>
         </article>
         <!--This is the address container-->
-        <address class="address-container">
+        <address class="address-container" onclick="magicphone()">
                 <h4 class="3"><span>Contact<br> Info</span></h4>
                 <hr id="contact-line">
                 <p id="phone" class="info"><i class="fa fa-phone-square fa-3x"></i><br>(555) 555-5555</p>
@@ -81,5 +82,6 @@
             </ul>
         </section>
     </main>
+    <script src="resume-interactive.js"></script>
 </body>
 </html>

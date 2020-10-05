@@ -194,6 +194,7 @@ h4 {
 
 #phone {
     grid-area: phone;
+    visibility: hidden;
 }
 
 #location {
