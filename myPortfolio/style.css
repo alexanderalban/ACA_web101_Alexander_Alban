@@ -1,217 +1,220 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(photo-1561477158-071455ac60e8.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(photo-1561477158-071455ac60e8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
 
-  /* What kind of selector is this? ANSWER: a class selector! */
-  .logo {
-    max-width: 100pt;
-    height: auto;
-    margin: 3% 3%;
-    border-radius: 100%;
-    background-color: white;
-    box-shadow: 0px -3px 6pt 7pt white;
-  }
+/* What kind of selector is this? ANSWER: a class selector! */
+.logo {
+  max-width: 100pt;
+  height: auto;
+  margin: 3% 3%;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0px -3px 6pt 7pt white;
+}
 
-  header {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    width: 96%;
-  }
+header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 96%;
+}
 
-  main {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-  }
+main {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
 
-  /* This is an element within an element selector */
-  nav > a {
-    margin: 2% 1% 3%;
-    max-height: 10%;
-    max-width: 14%;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12pt;
-    border-radius: 25px;
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    border: 3px solid white;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: .5s ease;
-  }
+/* This is an element within an element selector */
+nav > a {
+  margin: 2% 1% 3%;
+  max-height: 10%;
+  max-width: 14%;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  border-radius: 25px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border: 3px solid white;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.5s ease;
+}
 
-  nav > a:hover {
-    color: orange;
-    text-decoration: underline;
-  }
+nav > a:hover {
+  color: orange;
+  text-decoration: underline;
+}
 
-  .has-border {
-    border-radius: 25pt fixed;
-    border: 3px solid #0795C3;
-    background: white;
-    padding: 12px;
-    transition: .5s ease;
-  }
+.has-border {
+  border-radius: 25pt fixed;
+  border: 3px solid #0795c3;
+  background: white;
+  padding: 12px;
+  transition: 0.5s ease;
+}
 
-  nav {
-    display: flex;
-    width: 100%;
-    padding-right: 2%;
-    justify-content: flex-end;
-    flex-basis: auto;
-    flex-shrink: auto;
-  }
+nav {
+  display: flex;
+  width: 100%;
+  padding-right: 2%;
+  justify-content: flex-end;
+  flex-basis: auto;
+  flex-shrink: auto;
+}
 
-  /* This is an ID selector */
-  #profile-pic {
-    max-width: 200pt;
-    height: auto;
-    border-radius: 50%;
-    grid-column: 2/3;
-    justify-self: center;
-    box-shadow: 0px 0px 10pt 1pt black;
-  }
+/* This is an ID selector */
+#profile-pic {
+  max-width: 200pt;
+  height: auto;
+  border-radius: 50%;
+  grid-column: 2/3;
+  justify-self: center;
+  box-shadow: 0px 0px 10pt 1pt black;
+}
 
-  h1 {
-    color:black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-witdth: 3px;
-    -webkit-text-stroke-color: black;
-    grid-column: 2/3;
-    margin: 3% auto;
-    border-bottom: 3px solid orange;;
-  }
+h1 {
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-witdth: 3px;
+  -webkit-text-stroke-color: black;
+  grid-column: 2/3;
+  margin: 3% auto;
+  border-bottom: 3px solid orange;
+}
 
-  h2 {
-    color:black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-witdth: 3px;
-    -webkit-text-stroke-color: black;
-    grid-column: 2/3;
-    margin: 3% auto;
-    font-style: italic;
-  }
+h2 {
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-witdth: 3px;
+  -webkit-text-stroke-color: black;
+  grid-column: 2/3;
+  margin: 3% auto;
+  font-style: italic;
+}
 
-  h3 {
-    color:black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-witdth: 3px;
-    -webkit-text-stroke-color: black;
-    grid-column: 2/3;
-    margin: 3% auto;
-  }
+h3 {
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-witdth: 3px;
+  -webkit-text-stroke-color: black;
+  grid-column: 2/3;
+  margin: 3% auto;
+}
 
-  p {
-    grid-column: 2/3;
-    color:black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-witdth: 3px;
-    -webkit-text-stroke-color: black;
-    margin: 3% auto;
-    font-size: large;
-  }
+p {
+  grid-column: 2/3;
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-witdth: 3px;
+  -webkit-text-stroke-color: black;
+  margin: 3% auto;
+  font-size: large;
+}
 
-  .small-text {
-    grid-column: 2/3;
-    color: orange;
-    font-size: 10px;
-    margin: 3% auto;
-  }
+.small-text {
+  grid-column: 2/3;
+  color: orange;
+  font-size: 10px;
+  margin: 3% auto;
+}
 
-  .button {
-    grid-column: 2/3;
-    margin: 3% auto;
-    width: 70% auto;
-    height: 10% auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20pt;
-    border-radius: 50px;
-    border: 3px solid #0795C3;
-    background: whitesmoke;
-    padding: 5%;
-    text-align: center;
-    color: black;
-    letter-spacing: 5pt;
-    font-style: italic;
-    margin-bottom: 0;
-  }
+.button {
+  grid-column: 2/3;
+  margin: 3% auto;
+  width: 70% auto;
+  height: 10% auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
+  border-radius: 50px;
+  border: 3px solid #0795c3;
+  background: whitesmoke;
+  padding: 5%;
+  text-align: center;
+  color: black;
+  letter-spacing: 5pt;
+  font-style: italic;
+  margin-bottom: 0;
+}
 
-  .button:hover {
-    color: orange;
-    transition: 0.5s ease;
-  }
+.button:hover {
+  color: orange;
+  transition: 0.5s ease;
+}
 
 .normal-link {
   color: orange;
 }
-  .normal-link:visited {
-    color: burlywood;
+.normal-link:visited {
+  color: burlywood;
+}
+
+ul {
+  grid-column: 2/3;
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-witdth: 3px;
+  -webkit-text-stroke-color: black;
+  margin: 3% auto;
+  font-size: large;
+  list-style: none;
+}
+
+ul > a:link {
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-witdth: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+ul > a:visited {
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-witdth: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+li {
+  margin: 10px 15px 0 0;
+  text-align: center;
+}
+
+/*Animation fun!*/
+
+.button:hover {
+  animation: bouncy 0.5s ease;
+  box-shadow: 0px 0px 10pt 1pt white;
+}
+
+@keyframes bouncy {
+  0% {
+    margin-bottom: 0em;
   }
-
-  ul {
-    grid-column: 2/3;
-    color:black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-witdth: 3px;
-    -webkit-text-stroke-color: black;
-    margin: 3% auto;
-    font-size: large;
-    list-style: none;
+  50% {
+    margin-top: 0.1em;
   }
-
-  ul > a:link {
-    color:black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-witdth: 3px;
-    -webkit-text-stroke-color: black;
+  100% {
+    margin-bottom: 0em;
   }
+}
 
-  ul > a:visited {
-    color:black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-witdth: 3px;
-    -webkit-text-stroke-color: black;
-  }
-
-  li {
-    margin: 10px 15px 0 0;
-    text-align: center;
-  }
-
-
-  /*Animation fun!*/
-
-  .button:hover {
-    animation: bouncy .5s ease;
-    box-shadow: 0px 0px 10pt 1pt white;
-  } 
-
-  @keyframes bouncy {
-    0% { margin-bottom: 0em;}
-    50% { margin-top: .1em;}
-    100% { margin-bottom: 0em;}   
-  }
-
-  .has-border:hover {
-    box-shadow: 0px 0px 10pt 1pt white;
-  }
-
-
+.has-border:hover {
+  box-shadow: 0px 0px 10pt 1pt white;
+}
 
 /*CONTACT PAGE SETTINGS*/
 
 form {
   grid-column: 2 / 3;
   justify-self: center;
-  color:white;
+  color: white;
   -webkit-text-stroke-witdth: 3px;
   -webkit-text-stroke-color: black;
   margin: 3% auto;
@@ -230,28 +233,27 @@ textarea {
   background-color: orange;
 }
 
-  /*Reactive Adjustments*/
+/*Reactive Adjustments*/
 
-  @media (max-width: 800pt) {
-.nav-squish {
-  display: none;
-}
+@media (max-width: 800pt) {
+  .nav-squish {
+    display: none;
+  }
 
-/*Contact Page Specific*/
+  /*Contact Page Specific*/
 
-form {
-  grid-column: 1/4
-}
+  form {
+    grid-column: 1/4;
+  }
 
-#contact-main > p {
-  grid-column: 1 / 4;
-  width: 50ch;
-}
+  #contact-main > p {
+    grid-column: 1 / 4;
+    width: 50ch;
+  }
 
-textarea {
-  max-width: 50ch;
-}
-
+  textarea {
+    max-width: 50ch;
+  }
 
   @media (max-width: 600pt) {
     header {
@@ -266,7 +268,8 @@ textarea {
       justify-content: center;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       text-align: center;
     }
   }
@@ -274,6 +277,4 @@ textarea {
   textarea {
     max-width: 40ch;
   }
-
 }
-

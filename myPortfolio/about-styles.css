@@ -1,467 +1,460 @@
-html, body {
-overflow-x: hidden;
-margin: 0;
-font-family: 'Open Sans', sans-serif;
-
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-    background-image: url(photo-1561477158-071455ac60e8.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+  background-image: url(photo-1561477158-071455ac60e8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*This background fix wrapper is to allow the colors of the sections to extend beyond 
 the max-width border*/
 
-#background-fix-header, #background-fix-main, #background-fix-footer {
-    width: 100%;
-    margin: 0;
+#background-fix-header,
+#background-fix-main,
+#background-fix-footer {
+  width: 100%;
+  margin: 0;
 }
 #background-fix-header {
-    background-color: rgb(29,91,120);
+  background-color: rgb(29, 91, 120);
 }
 
 #background-fix-main {
-    background-color: rgb(227,223,219);
+  background-color: rgb(227, 223, 219);
 }
 
 #background-fix-footer {
-    background-color: rgb(35,31,32);
+  background-color: rgb(35, 31, 32);
 }
 
 /*This allows the page content to be centered, and limit the width of the content area*/
 
-#head-container, #main-container, #footer-container { 
-	max-width: 760pt; 
-    margin: 0 auto; 
-
+#head-container,
+#main-container,
+#footer-container {
+  max-width: 760pt;
+  margin: 0 auto;
 }
-
 
 /*This is the Head-Container components*/
 
 #aca-title {
-    grid-area: aca-title;
-    align-self: end;
-    justify-self: start;
-    color: white;
-    font-size: 15pt;
+  grid-area: aca-title;
+  align-self: end;
+  justify-self: start;
+  color: white;
+  font-size: 15pt;
 }
 
 .logo {
-    grid-area: logo;
-    height: 64pt;
-    width: auto;
-    margin-bottom: 010pt;
-    align-self: end;
-    border-radius: 100%;
-    background-color: white;
-    box-shadow: -0pt -1.5pt 6pt 5pt white;
+  grid-area: logo;
+  height: 64pt;
+  width: auto;
+  margin-bottom: 010pt;
+  align-self: end;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: -0pt -1.5pt 6pt 5pt white;
 }
 
 #navigation {
-    grid-area: navigation;
-    align-self: end;
-    justify-self: end;
-    margin-bottom: 12pt;
-    color:black;
-    font-size: 12pt;
-    font-weight: bold;
-    white-space: nowrap;
-    
+  grid-area: navigation;
+  align-self: end;
+  justify-self: end;
+  margin-bottom: 12pt;
+  color: black;
+  font-size: 12pt;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 .nav-links {
-    transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .nav-links:link {
-    color: white;
-    text-decoration: none;
-    padding-right: 10pt;
+  color: white;
+  text-decoration: none;
+  padding-right: 10pt;
 }
 
 .nav-links:visited {
-    color:white;
+  color: white;
 }
 
 .nav-links:hover {
-    color: orange;
-    text-decoration: underline;
+  color: orange;
+  text-decoration: underline;
 }
 
 #head-container {
-    display: grid;
-    grid-template-columns: 70pt 1fr 1fr;
-    grid-template-rows: 96pt;
-    grid-template-areas: 
-    "logo aca-title navigation";
-    justify-content: center;
-  }
-
+  display: grid;
+  grid-template-columns: 70pt 1fr 1fr;
+  grid-template-rows: 96pt;
+  grid-template-areas: "logo aca-title navigation";
+  justify-content: center;
+}
 
 /*This is the Main-Container components*/
 
-#port-link, #blog, #hobbies {
-    background-size: cover;
-    background-position: cover;
-    transition: .5s ease;
+#port-link,
+#blog,
+#hobbies {
+  background-size: cover;
+  background-position: cover;
+  transition: 0.5s ease;
 }
 
-
 .link-heading {
-    color: black;
-    align-self: center;
-    justify-self: center;
-    background-color: white;
-    padding: 12pt;
-    font-size: 24pt;
+  color: black;
+  align-self: center;
+  justify-self: center;
+  background-color: white;
+  padding: 12pt;
+  font-size: 24pt;
 }
 
 h1 {
-    grid-area: name;
-    justify-self: center;
-    align-self: end;
-    text-decoration: underline;
-    font-size: 24pt;
-    margin-bottom: 0;
-    color: black;
-    text-align: center;
-
+  grid-area: name;
+  justify-self: center;
+  align-self: end;
+  text-decoration: underline;
+  font-size: 24pt;
+  margin-bottom: 0;
+  color: black;
+  text-align: center;
 }
 
-
 #student-description {
-    grid-area: student-description;
-    justify-self: center;
-    font-size: 16pt;
-    color: black;
-    margin: 0;
+  grid-area: student-description;
+  justify-self: center;
+  font-size: 16pt;
+  color: black;
+  margin: 0;
 }
 
 .headshots {
-    grid-area: headshots;
-    box-shadow: 0px 0px 10pt 1pt black;
-    display: flex;
-    justify-content: center;
-    max-height: 100%;
-    overflow: hidden;
+  grid-area: headshots;
+  box-shadow: 0px 0px 10pt 1pt black;
+  display: flex;
+  justify-content: center;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 #smiling-pic {
-    max-height: 1fr;
-    max-width: 1fr;
-    overflow: hidden;
-    object-fit: cover;
-
+  max-height: 1fr;
+  max-width: 1fr;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 #history {
-    grid-area: article;
-    background-color: white;
-    padding: 16pt;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    font-size: 10pt;
-    box-shadow: 0px 0px 10pt 1pt black;
+  grid-area: article;
+  background-color: white;
+  padding: 16pt;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 10pt;
+  box-shadow: 0px 0px 10pt 1pt black;
 }
 
 #port-link {
-    grid-area: port-link;
-    background-image: url("nikita-kachanovsky-unsplash.jpg");
-    display: grid;
-    background-color: white;
-    box-shadow: 0px 0px 10pt 1pt black;
+  grid-area: port-link;
+  background-image: url("nikita-kachanovsky-unsplash.jpg");
+  display: grid;
+  background-color: white;
+  box-shadow: 0px 0px 10pt 1pt black;
 }
 
 #port-link:hover {
-    opacity: .5;
-    transition: 1s;
+  opacity: 0.5;
+  transition: 1s;
 }
 
 address {
-    grid-area: address;
-    background-color: white;
-    font-style: unset;
-    font-size: 12pt;
-    font-weight: bold;
-    display: grid;
-    box-shadow: 0px 0px 10pt 1pt black;
+  grid-area: address;
+  background-color: white;
+  font-style: unset;
+  font-size: 12pt;
+  font-weight: bold;
+  display: grid;
+  box-shadow: 0px 0px 10pt 1pt black;
 }
 
 .adress-links {
-    align-self: center;
-    text-indent: 20pt
+  align-self: center;
+  text-indent: 20pt;
 }
 
 .normal-link:link {
-    color:black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .normal-link:visited {
-    color:black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
-
 .normal-link:hover {
-    color: orange;
-    text-decoration: underline;
+  color: orange;
+  text-decoration: underline;
 }
 
 #blog {
-    grid-area: blog;
-    background-image: url("glenn-carstens-peters-unsplash.jpg");
-    display: grid;
-    box-shadow: 0px 0px 10pt 1pt black;
+  grid-area: blog;
+  background-image: url("glenn-carstens-peters-unsplash.jpg");
+  display: grid;
+  box-shadow: 0px 0px 10pt 1pt black;
 }
 
 #blog:hover {
-    opacity: 50%;
-    transition: 1s;
+  opacity: 50%;
+  transition: 1s;
 }
 
 #hobby-container {
-    grid-area: hobbies;
-    background-image: url("kevin-ku-unsplash.jpg");
-    display: grid;
+  grid-area: hobbies;
+  background-image: url("kevin-ku-unsplash.jpg");
+  display: grid;
 }
 
 .hobby-title {
-    color:white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 /*see more Hobby Container settings below*/
 
 #hobby-container > p {
-    color:black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-witdth: 3pt;
-    -webkit-text-stroke-color: black;
-    text-align: center;
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-witdth: 3pt;
+  -webkit-text-stroke-color: black;
+  text-align: center;
 }
 
 h2 {
-    text-align: center;
-    margin-bottom: 0;
-    font-size: 15pt;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 15pt;
 }
 
 #main-container {
-    display: grid;
-    grid-template-columns: repeat(auto, minmax 1fr, 1fr);
-    grid-template-rows: 50pt 24pt repeat(4, 1fr);
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: repeat(auto, minmax 1fr, 1fr);
+  grid-template-rows: 50pt 24pt repeat(4, 1fr);
+  grid-template-areas:
     "name name"
     "student-description student-description"
     "headshots article"
     "headshots port-link"
     "headshots blog"
     "address hobbies";
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    justify-content: center;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  justify-content: center;
 }
 
 /*This is the hobby-container components*/
 
 .hobby-title {
-    grid-area: hobby-title;
+  grid-area: hobby-title;
 }
 
 #hob1 {
-    grid-area: voiceover;
+  grid-area: voiceover;
 }
 
 #hob2 {
-    grid-area: reading;
+  grid-area: reading;
 }
 
 #hob3 {
-    grid-area: movies;
+  grid-area: movies;
 }
 
 #hob4 {
-    grid-area: gaming;
+  grid-area: gaming;
 }
 
 #hob5 {
-    grid-area: music;
+  grid-area: music;
 }
 
 #hob6 {
-    grid-area: ocd-treatment
+  grid-area: ocd-treatment;
 }
 
 #hobby-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40pt 40pt 40pt 40pt;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40pt 40pt 40pt 40pt;
+  grid-template-areas:
     "hobby-title hobby-title"
     "voiceover reading"
     "movies gaming"
-    "music ocd-treatment"
+    "music ocd-treatment";
 }
 
 /*This is the Footer-Container components*/
 
 #footer-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80pt;
-    grid-template-areas:
-    "projects";
-    color: white;
-    justify-content: center;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80pt;
+  grid-template-areas: "projects";
+  color: white;
+  justify-content: center;
 }
 
 #projects {
-    grid-area: projects;
+  grid-area: projects;
 }
 
 /*Animation Time!*/
 
 #main-container {
-    animation: fadeInRight;
-    animation-duration: 1s;
+  animation: fadeInRight;
+  animation-duration: 1s;
 }
 
 #hobby-container:hover {
-    animation: pulse;
-    animation-duration: 1s;
-
+  animation: pulse;
+  animation-duration: 1s;
 }
 
-  /*Pop-up time! See JavaScript for more*/
+/*Pop-up time! See JavaScript for more*/
 
 .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 .popup .popuptext {
-    visibility: hidden;
-    width: 220px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
+  visibility: hidden;
+  width: 220px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
 
 .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
 
 .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
+  from {
+    opacity: 0;
   }
-
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+  to {
+    opacity: 1;
   }
+}
 
-
-
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* Responsive adjustments */
 
 @media (max-width: 768px) {
+  h1 {
+    justify-content: center;
+    align-self: center;
+  }
 
-    h1 {
-        justify-content: center;
-        align-self: center;
-    }
-    
-    #main-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-content: space-around;
-        text-align: center;
-    }
+  #main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+  }
 
-    .headshots {
-        max-width: 75%;
-        height: auto;
-        justify-content: center;
-        align-self: center;
-    }
+  .headshots {
+    max-width: 75%;
+    height: auto;
+    justify-content: center;
+    align-self: center;
+  }
 
-    #smiling-pic {
-        max-width: 100%;
-        height: auto;
-        justify-content: center;
-    }
+  #smiling-pic {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+  }
 
-    #port-link, #blog {
-        height: 200pt
-    }
+  #port-link,
+  #blog {
+    height: 200pt;
+  }
 
-    #navigation {
-        white-space: normal;
-        font-size: 10pt;
-    }
+  #navigation {
+    white-space: normal;
+    font-size: 10pt;
+  }
 
-    .nav-squish {
-        display: none;
-      }
-
+  .nav-squish {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
+  #main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+  }
 
-    #main-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-content: space-around;
-        text-align: center;
-    }
+  #port-link,
+  #blog {
+    height: 200pt;
+  }
 
-    #port-link, #blog {
-        height: 200pt
-    }
-
-    h1 {
-        justify-content: center;
-        align-self: center;
-    }
-
-
-
+  h1 {
+    justify-content: center;
+    align-self: center;
+  }
 }
